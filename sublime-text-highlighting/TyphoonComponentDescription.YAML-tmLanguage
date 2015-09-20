@@ -1,0 +1,317 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Typhoon component desc syntax
+scopeName: source.cmp
+fileTypes: [cmp]
+uuid: 0ab072f3-01b6-44eb-b0c5-9357a9da95c5
+
+patterns:
+#
+# COMPONENT TYPE KEYWORDS
+#
+- comment: match component type
+  name: keyword.other.cmp
+  match: (?:^|\W)component_type(?:$|\W)
+
+- comment: match icon keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)icon(?:$|\W)
+
+- comment: match layout keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)layout(?:$|\W)
+
+- comment: match size keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)size(?:$|\W)
+
+- comment: match label keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)label(?:$|\W)
+
+- comment: match require keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)require(?:$|\W)
+
+- comment: match template keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)template(?:$|\W)
+
+- comment: match description keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)description(?:$|\W)
+
+- comment: match description keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)terminals(?:$|\W)
+
+- comment: match description keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)properties(?:$|\W)
+
+#
+# TERMINAL TYPE KEYWORDS
+#
+
+- comment: match position keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)position(?:$|\W)
+
+- comment: match position keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)position(?:$|\W)
+
+- comment: match kind keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)kind(?:$|\W)
+
+- comment: match direction keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)direction(?:$|\W)
+
+- comment: match sp_type keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)sp_type(?:$|\W)
+
+- comment: match supported keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)supported(?:$|\W)
+
+- comment: match default keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)default(?:$|\W)
+
+- comment: match expression keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)expression(?:$|\W)
+
+- comment: match readonly keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)readonly(?:$|\W)
+
+
+#
+# PROPERTY TYPE KEYWORDS
+#
+- comment: no evaluate keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)no_evaluate(?:$|\W)
+
+- comment: previous_names keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)previous_names(?:$|\W)
+
+- comment: widget keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)widget(?:$|\W)
+
+- comment: combo_values keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)combo_values(?:$|\W)
+
+- comment: type keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)type(?:$|\W)
+
+- comment: default_value keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)default_value(?:$|\W)
+
+- comment: unit keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)unit(?:$|\W)
+
+- comment: min_value keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)min_value(?:$|\W)
+
+- comment: max_value keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)max_value(?:$|\W)
+
+- comment: group keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)group(?:$|\W)
+
+- comment: nonvisible keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)nonvisible(?:$|\W)
+
+- comment: keepline keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)keepline(?:$|\W)
+
+- comment: skip keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)skip(?:$|\W)
+
+- comment: vector keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)vector(?:$|\W)
+
+#
+# Handler keywords
+#
+- comment: CODE keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)CODE(?:$|\W)
+
+- comment: ENDCODE keyword
+  name: keyword.other.cmp
+  match: (?:^|\W)ENDCODE(?:$|\W)
+
+
+#
+# CONSTANTS
+#
+
+- comment: layout constant
+  name: constant.language.cmp
+  match: (?:^|\W)dynamic(?:$|\W)
+
+- comment: layout constant
+  name: constant.language.cmp
+  match: (?:^|\W)static(?:$|\W)
+
+# Position constants   "left"|"right"|"top"|"bottom"|"center"
+- comment: position constant
+  name: constant.language.cmp
+  match: (?:^|\W)left(?:$|\W)
+
+- comment: position constant
+  name: constant.language.cmp
+  match: (?:^|\W)right(?:$|\W)
+
+- comment: position constant
+  name: constant.language.cmp
+  match: (?:^|\W)top(?:$|\W)
+
+- comment: position constant
+  name: constant.language.cmp
+  match: bottom(?:$|\W)
+
+- comment: position constant
+  name: constant.language.cmp
+  match: center(?:$|\W)
+
+#
+# Terminal kind constants
+#
+- comment: SP terminal type
+  name: constant.language.cmp
+  match: (?:^|\W)sp(?:$|\W)
+
+- comment: PE terminal type
+  name: constant.language.cmp
+  match: (?:^|\W)pe(?:$|\W)
+
+#
+# Terminal direction constants
+#
+- comment: SP terminal in terminal
+  name: constant.language.cmp
+  match: (?:^|\W)in(?:$|\W)
+
+- comment: SP terminal out terminal
+  name: constant.language.cmp
+  match: (?:^|\W)out(?:$|\W)
+
+#
+# SP type constants
+#
+
+- comment: inherit typeintint
+  name: constant.language.cmp
+  match: (?:^|\W)inherit(?:$|\W)
+
+- comment: int type
+  name: constant.language.cmp
+  match: (?:^|\W)int(?:$|\W)
+
+- comment: uint type
+  name: constant.language.cmp
+  match: (?:^|\W)uint(?:$|\W)
+
+- comment: real type
+  name: constant.language.cmp
+  match: (?:^|\W)real(?:$|\W)
+
+- comment: auto type
+  name: constant.language.cmp
+  match: (?:^|\W)auto(?:$|\W)
+
+#
+# Boolean constants
+#
+- comment: true
+  name: constant.language.cmp
+  match: (?:^|\W)true(?:$|\W)
+
+- comment: false
+  name: constant.language.cmp
+  match: (?:^|\W)false(?:$|\W)
+
+- comment: True
+  name: constant.language.cmp
+  match: (?:^|\W)True(?:$|\W)
+
+- comment: False
+  name: constant.language.cmp
+  match: (?:^|\W)False(?:$|\W)
+
+#
+# Property type constants: "uint[]"|"uint"|"int[]"|"int"|"real[]"|"real"|"string"|"bool"|
+#
+- comment: uint[] constant
+  name: constant.language.cmp
+  match: (?:^|\W)uint'['']'(?:$|\W)
+
+- comment: uint constant
+  name: constant.language.cmp
+  match: (?:^|\W)uint'['']'(?:$|\W)
+
+- comment: int[] constant
+  name: constant.language.cmp
+  match: (?:^|\W)int'['']'(?:$|\W)
+
+- comment: int constant
+  name: constant.language.cmp
+  match: (?:^|\W)int(?:$|\W)
+
+- comment: real[] constant
+  name: constant.language.cmp
+  match: (?:^|\W)real'['']'(?:$|\W)
+
+- comment: real constant
+  name: constant.language.cmp
+  match: (?:^|\W)real(?:$|\W)
+
+- comment: string constant
+  name: constant.language.cmp
+  match: (?:^|\W)string(?:$|\W)
+
+#
+# Property widget constants: "edit"|"combo"|"checkbox"|"togglebutton"
+#
+- comment: edit constant
+  name: constant.language.cmp
+  match: (?:^|\W)edit(?:$|\W)
+
+- comment: combo constant
+  name: constant.language.cmp
+  match: (?:^|\W)combo(?:$|\W)
+
+- comment: checkbox constant
+  name: constant.language.cmp
+  match: (?:^|\W)checkbox(?:$|\W)
+
+- comment: tooglebutton constant
+  name: constant.language.cmp
+  match: (?:^|\W)tooglebutton(?:$|\W)
+
+- comment: string variable
+  name: variable.parameter.cmp
+  match: ("[^"]*")|(\'[^\']*\')
+
+
+...
